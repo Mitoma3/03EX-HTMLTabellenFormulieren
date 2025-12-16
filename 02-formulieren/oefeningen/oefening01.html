@@ -9,15 +9,27 @@
 
 <body>
     <h1>Aanmelden.</h1>
-    <form action="mailto:michiel.decoster@student.hogent.be">
-        <input type="email" name="email">
-        <label for="email">E-mail:</label>
-        <input type="password" name="password">
-        <label for="password">Wachtwoord:</label>
-        <input type="checkbox" name="aangemeld_blijven">
-        <label for="aangemeld_blijven">Aangemeld blijven</label>
+    <form action="mailto:michiel.decoster@student.hogent.be?subject=Aanmelden" method="post" enctype="text/plain">
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="naam@server.com" required>
+        </div>
+        <div>
+            <label for="password">Wachtwoord:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="aangemeld_blijven">Aangemeld blijven</label>
+            <input type="checkbox" id="aangemeld_blijven" name="aangemeld_blijven">
+        </div>
+        <div>
+            <input type="submit" value="Meld je aan">
+        </div>
+
+
+
     </form>
-    
+
 </body>
 
 </html>

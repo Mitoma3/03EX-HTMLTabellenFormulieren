@@ -9,7 +9,45 @@
 
 <body>
     <h1>Poll.</h1>
-    
+    <form action="mailto:michiel.decoster@student.hogent.be" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Ik volg Web Development I</legend>
+            <div>
+                <input type="radio" name="volgen" value="onsite 08301000" id="volgen1" required>
+                <label for="volgen1">Op de campus van 8:30-10:00</label>
+            </div>
+            <div>
+                <input type="radio" name="volgen" value="onsite 11001230" id="volgen2">
+                <label for="volgen2">Op de campus van 11:00-12:30</label>
+            </div>
+            <div>
+                <input type="radio" name="volgen" value="online 11001230" id="volgen3">
+                <label for="volgen3">Online van 11:00-12:30</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Examen Web Development I</legend>
+            <div><input type="radio" name="examen" value="onsite laptop" id="examen1" required>
+                <label for="examen1">Op de campus op laptop</label>
+            </div>
+            <div><input type="radio" name="examen" value="Expo schriftelijk" id="examen2">
+                <label for="examen2">In Flanders Expo - schriftelijk</label>
+            </div>
+            <div><input type="radio" name="examen" value="online laptop" id="examen3">
+                <label for="examen3">Online op laptop</label>
+            </div>
+            <div><input type="radio" name="examen" value="online mondeling" id="examen4">
+                <label for="examen4">Online mondeling</label>
+            </div>  
+        </fieldset>
+        <div>
+            <input type="submit" value="Verstuur">
+            <input type="reset" value="Clear">
+        </div>
+
+
+    </form>
+
 </body>
 
 </html>

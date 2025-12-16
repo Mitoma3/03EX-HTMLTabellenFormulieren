@@ -9,7 +9,39 @@
 
 <body>
     <h1>Registreer.</h1>
-    
+    <form action="mailto:michiel.decoster@student.hogent.be" method="post" enctype="text/plain">
+        <div>
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" required>
+        </div>
+        <div>
+            <label for="voornaam">Voornaam:</label>
+            <input type="text" id="voornaam" name="voornaam" required>
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="geboortedatum">Geboortedatum:</label>
+            <input type="date" id="geboortedatum" name="geboortedatum">
+        </div>
+        <div>
+            <label for="nieuwsbrief">Abonneren op nieuwsbrief:</label>
+            <input type="checkbox" name="nieuwsbrief" value="true" checked>
+        </div>
+        <div>
+            <label for="privacybeleid">Ik ga akoord met het privacybeleid:</label>
+            <input type="checkbox" name="privacybeleid" id="privacybeleid" required>
+        </div>
+        <div>
+            <input type="submit" value="Registreer">
+            <button type="reset"> Clear</button>
+        </div>
+
+
+
+    </form>    
 </body>
 
 </html>

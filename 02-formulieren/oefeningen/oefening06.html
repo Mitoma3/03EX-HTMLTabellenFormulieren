@@ -9,6 +9,30 @@
 
 <body>
     <h1>Favoriete kleur - getal. Score.</h1>
+    <form action="mailto:michiel.decoster@student.hogent.be" method="post" enctype="text/plain" id="form">
+        <div>
+            <label for="naam">Geef naam:</label>
+            <input type="text" name="naam" id="naam" autocomplete=""></div>
+        <div>
+            <label for="kleur">Kies je favoriete kleur:</label>
+            <input type="color" name="color" id="kleur" value="#ff0000" autofocus>
+        </div>
+        <div>
+            <label for="getal">Kies je favoriete getal</label>
+            <input type="number" name="number" id="getal" value="13" min="0" required>
+        </div>
+        <div>
+            <label for="score">Geef een score voor Web Development I:</label>
+            <input type="range" min="0" max="20" value="15" step="1" id="score">
+            <output id="showScore"></output>
+        </div>
+        <div>
+            <input type="submit" value="verstuur">
+            <input type="reset">
+        </div>
+
+        <progress min="0" max="100" id="showForm">    50    </progress>
+    </form>
     
 
     

@@ -9,7 +9,24 @@
 
 <body>
     <h1>Maak je afspraak.</h1>
-    
+    <form action="mailto:michiel.decoster@student.hogent.be?subject=Afspraak" method="post" enctype="text/plain">
+        <div>
+            <label for="date">Datum:</label>
+            <input type="date" id="date" required>
+        </div>
+        <div>
+            <label for="tijd">Tijd:</label>
+            <input id="tijd" type="time" required>
+        </div>
+        <div>
+        <label for="reden">Reden afspraak:</label><br>
+        <textarea name="reden" id="reden" rows="5" cols="60" required placeholder="Geef hier de reden voor je afpsraak in..."></textarea>
+        </div>
+        <div>
+            <input type="submit" id="submit" value="Maak afspraak">
+        </div>
+    </form>
+
 </body>
 
 </html>
