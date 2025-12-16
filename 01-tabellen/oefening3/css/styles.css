@@ -1,9 +1,8 @@
-table, th, td{
+table, td, th{
     border: 1px solid black;
     border-collapse: collapse;
 }
 
-.noborder,
-.noborder td {
-  border: 0px;
+.thick {
+    border-bottom: 2px solid black;
 }
